@@ -87,12 +87,38 @@
             color: #16a085;
         }
 
+        .social-links {
+            margin-top: 10px;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+            font-size: 1.5em;
+            color: #1abc9c;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #16a085;
+        }
+
         footer {
             text-align: center;
             padding: 20px;
             background-color: #2c3e50;
             color: white;
             font-size: 0.9em;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     </style>
 </head>
@@ -106,7 +132,7 @@
 <section>
     <h2>About Me</h2>
     <div class="section-content">
-        <img src="YOUR_IMAGE_URL_HERE" alt="Ananda Mohan Paul" style="width: 150px; border-radius: 75px; margin-bottom: 20px;">
+        <img src="IMG_20240318_203751.jpg" alt="Ananda Mohan Paul" style="width: 150px; border-radius: 75px; margin-bottom: 20px;">
         <p>I'm Ananda Mohan Paul, a passionate AI enthusiast and researcher focused on developing cutting-edge solutions in natural language processing, machine learning, and trustworthy AI. I hold a Bachelor's degree in Computer Science and have experience working as a System Engineer in Bangladesh.</p>
     </div>
 
@@ -162,8 +188,13 @@
     <h2>Contact Me</h2>
     <p>Email: <a href="mailto:paul.mohon97@gmail.com">paul.mohon97@gmail.com</a></p>
     <p>
-        <a href="YOUR_CV_URL_HERE" download style="background-color: #1abc9c; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold;">Download My CV</a>
+        <a href="https://raw.githubusercontent.com/paulmohon97/My_Portfolio/main/Paul_CV.pdf" download style="background-color: #1abc9c; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold;">Download My CV</a>
     </p>
+    <h3>Connect with Me</h3>
+    <div class="social-links">
+        <a href="https://scholar.google.com/citations?user=_QUUtU0AAAAJ&hl=en" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+        <a href="https://www.linkedin.com/in/ananda-mohan-paul-227b101a9/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    </div>
 </section>
 
 <footer>
